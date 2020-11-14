@@ -178,7 +178,7 @@ public class Recognizer extends javax.swing.JFrame {
         if (Command.equals("")) {
             resultLabel.setText("");
             moreInfoLabel.setVisible(false);
-        } else if (new MyParser(Command).belong()) {
+        } else if (new MyParser(Command).isBelong()) {
             resultLabel.setForeground(new Color(0, 150, 150));
             resultLabel.setText(" Command recognized successfully");
             moreInfoLabel.setText(" More Info about " + Command);
